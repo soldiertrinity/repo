@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+	<meta charset="utf-8">
+	<title>Google</title>
+
+	<style>
+
+	@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&family=Fruktur&family=Lobster&display=swap');
+
+	
+	.fonteGoogle{
+		font-size: 120px;
+		font-family: 'Fruktur', cursive;
+		margin: 15px;
+
+	}
+	.fonteGoogle:hover{
+		font-size: 120px;
+		font-family: 'Fruktur', cursive;
+		margin: 15px;
+		
+		font-weight: bold;
+		text-align: center;
+		
+		background-image: url("fire.gif");
+		/* agora colocamos o fundo gradiente dentro do texto com essa propriedade */
+		background-clip: text;
+		-webkit-background-clip: text;
+
+		/* a cor do texto deve estar como transparent */
+		color: transparent;
+
+	}
+
+	input::placeholder{
+
+		color: blue;
+		font-weight: bold;
+		font-size: 40 px;
+		font-family: monospace;
+
+		padding: 5px;
+
+	}
+
+	body{
+		margin: 0;
+	}
+
+	.container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+		/* imagem de fundo */
+		background-image: url("montanhas.jpg");
+		/* agora colocamos o fundo gradiente dentro do texto com essa propriedade */
+		
+	}
+
+	.divDosBotao{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	section{
+		display: flex;
+		flex-direction: column;
+		
+		align-items: center;
+		justify-content: center;
+	}
+
+	input[type=submit]{
+		display: none;
+	}
+
+	input[type=submit]:hover{
+
+
+
+	}
+
+	input[type=search]{
+		padding: 15px;
+		font-size: 40 px;
+		font-family: monospace;
+	}
+
+	.customSubmit:hover{
+		background-color: darkorange;
+	}
+
+	.customSubmit{
+		background-color: orange;
+		border-radius: 10px;
+		color: black;
+
+		font-family: sans-serif;
+		font-weight: bold;
+
+		padding: 5px;
+		margin: 5px;
+	}
+
+
+
+	.titulo{
+		background-color: green;
+
+	}
+	.searchArredondado{
+		border-radius: 15px;
+		border-width: 4px;
+		border-style: solid;
+		border-color: orange;
+	}
+
+	h1{
+		
+		font-size: 6em;
+		font-weight: bold;
+		text-align: center;
+		
+		/* imagem de fundo */
+		background-image: url("marpaisagem.jpg");
+		/* agora colocamos o fundo gradiente dentro do texto com essa propriedade */
+		background-clip: text;
+		-webkit-background-clip: text;
+
+		/* a cor do texto deve estar como transparent */
+		color: transparent;
+
+	}
+
+	h1:hover{
+
+		font-size: 6em;
+		font-weight: bold;
+		text-align: center;
+		
+		background-image: url("fire.gif");
+		/* agora colocamos o fundo gradiente dentro do texto com essa propriedade */
+		background-clip: text;
+		-webkit-background-clip: text;
+
+		/* a cor do texto deve estar como transparent */
+		color: transparent;
+
+	}
+
+</style>
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<section>
+			<h1 class="fonteGoogle">Google</h1>
+			<form action="https://www.google.com/search">
+				<input class="searchArredondado" type ="search" name="q"
+				placeholder="Pesquise no Google ou digite uma URL" style="width: 550px; height: 35px;">
+				<br>
+				<div class="divDosBotao">
+
+					<label class="customSubmit">
+						<input type ="submit" value="q">
+						Search
+					</label>
+					<label class="customSubmit">
+						<input type ="submit" value="q">
+						I'm feeling lucky
+					</label>
+				</div>
+			</form>
+		</section>
+	</div>
+
+</body>
+</html>
