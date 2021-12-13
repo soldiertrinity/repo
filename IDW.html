@@ -1,0 +1,102 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Some seus pontos</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" type ="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+  
+  </head>
+  <body>
+    <nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img class="logo" src="br_logo.png" /> Brasileirão
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" href="tela.telaPrincipal.html">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="telaPrincipal.html">Tela inicial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="IDW.html">Soma pontos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="jogadas.html">Jogadas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Informações</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<form>
+      <h1> PONTOS </h1>
+      <input type="text" name="time" placeholder="Nome do seu Time" id="time"/>
+      <input type="number" name="vitorias" placeholder="Vitorias" min="0" id="vitorias"/>
+      <input type="number" name="empates" placeholder="Empates" min="0" id="empates"/>
+      <input type="number" name="derrota" placeholder="Derrotas" min="0" id="derrota"/>
+      <input type="submit" name="enviar" placeholder="Enviar" id="enviar" onclick="pontuar()" />
+      <p id="resultado">
+      <p id="historico">
+      </p>
+    </form>
+     <script type="text/javascript"> 
+            function pontos(vitorias,empates,derrota){
+                return (vitorias * 3) + (empates * 1) + (derrota * 0);
+            }
+            var pontuacoes = [];
+              if(localStorage.getItem("pontuacoes") !=null){
+                  pontuacoes = JSON.parse(localStorage.getItem("pontuacoes"));
+                  pontuacoes_antigas();
+              }
+            
+
+            function pontuacoes_antigas(){
+                    var pontuacoes_armazenadas = localStorage.getItem("pontuacoes");
+                    var converte = JSON.parse(pontuacoes_armazenadas);
+                    var historico = document.getElementById("historico");
+                    historico.innerHTML = " "; 
+
+                    for(var c=0;c<converte.length;c++){
+                      var h3 = document.createElement("h3");
+                      h3.innerHTML = `Time: ${converte[c]["time"]}  Pontos feitos: ${converte[c]["total_pontos"]} `;
+                      historico.append(h3);
+                    }
+
+            }
+            function pontuar(){
+                var vitorias = document.getElementById("vitorias").value;
+                var empates = document.getElementById("empates").value;
+                var derrota = document.getElementById("derrota").value;
+                var time =  document.getElementById("time").value;
+
+                var total_pontos = pontos(vitorias,empates,derrota);
+                var resultado = document.getElementById("resultado");
+                  resultado.innerHTML = `O seu time fez: ${total_pontos} pontos`;
+
+            var pontuacao = {
+              "time": time;
+              "vitorias": vitorias;
+              "empates": empates;
+              "derrota": derrota;
+              "total_pontos": total_pontos;
+            };
+
+            pontuacoes.push(pontuacao);
+
+            var informacoes_pontuacao = JSON.stringify(pontuacoes);
+            localStorage.setItem("pontuacoes", informacoes_pontuacao);
+            pontuacoes_antigas();
+
+            }
+        </script>
+  </body>
+</html>

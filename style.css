@@ -1,0 +1,235 @@
+
+nav {
+  background-color: seagreen;
+}
+.navbar-brand img {
+  max-height: 70px;
+}
+.navbar-brand {
+
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: yellow;
+  margin-top: 1px;
+  text-shadow: 3px 3px darkblue;
+
+}
+
+.guias{
+
+  color: yellow;
+  text-shadow: 
+  -1px -1px 0px #000, 
+  -1px 1px 0px #000,                    
+  1px -1px 0px #000,                  
+  1px 0px 0px #000;
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+
+}
+
+.guias:hover{
+  color: #f8e816 ;
+}
+
+.guiaLi{
+  margin-left: -40px;
+
+}
+
+
+
+nav ul li a {
+  color: #ffffff;
+  font-size: 22px;
+  margin: auto 75px;
+}
+nav ul li a:hover {
+  color: #ffffff;
+}
+form{
+  background-color: white;
+  width: 70%
+  padding:25px;
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 15px;
+}
+
+.navbar-brand:hover{
+ text-shadow: 3px 3px black;
+ color: yellow;
+}
+
+.centro{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  height: 15%;
+}
+form input[type=text]{
+  width: 100%;
+  text-align: center;
+  background-color: white;
+}
+form input[type=number]{
+  width:100%;
+  height:40px;
+  border:1px solid grey;
+  padding-left:5px;
+  margin: 5px 0px;
+  text-align: center;
+}
+
+form input[type=button]{
+  width:100%;
+  height:40px;
+  cursor:pointer;
+  background: darkseagreen;
+  color:white;
+  border: 0;
+  border-radius: 25px;
+}
+h1{
+  text-align: center;
+  color: darkseagreen;
+}
+p {
+  text-align: center;
+  
+  color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
+.tituloPagina{
+  font-size: 50px;
+  padding-left: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-family: 'Fredoka One', cursive;
+  text-shadow: 3px 3px darkblue;
+  color: yellow;
+}
+
+.brasoes{
+  display: flex;
+  align-items: center;
+  
+}
+
+.divInformacoes{
+
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.divInformacoes2{
+
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  background-color: rgba(25, 2, 47, 0.2);
+  backdrop-filter: blur( 20px);
+  -webkit-backdrop-filter:  blur(20px);
+  border-radius: 20px;
+}
+
+.fonteInformacao{
+  font-size: 19px;
+  color: white;
+  font-family: monospace;
+  font-family: 'Bakbak One', cursive;
+  text-shadow: 
+  -1px -1px 0px #000, 
+  -1px 1px 0px #000,                    
+  1px -1px 0px #000,                  
+  1px 0px 0px #000;
+  white-space: pre-wrap;
+}
+
+.fonteTituloInformacao{
+
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 
+  -2px -2px 1px #000, 
+  -2px 2px 1px #000,                    
+  2px -2px 1px #000,                  
+  2px 1px 1px #000;
+
+}
+
+.escudos:hover{
+
+  width: 100px;
+  height: 100px;
+  
+
+}
+
+.teste{
+  align-items: center;
+}
+
+.nomeDoBrabo{
+
+  font-size: 20px;
+  color: yellow;
+  font-weight: bold;
+  font-family: monospace;
+  text-shadow: 
+  -1px -1px 0px #000, 
+  -1px 1px 0px #000,                    
+  1px -1px 0px #000,                  
+  1px 0px 0px #000;
+
+}
+
+.handleVisibilidade{
+  visibility: hidden;
+}
+
+nav{
+  background-image: linear-gradient(#008000, #0000ff, #ffff00);
+}
+
+body{
+  background-image: url("midias/brasill.png");
+  
+}
+.float{
+  padding-top: 150px;
+  width: 33%;
+  float: left;
+}
+.floatR{
+  padding-top: 15px;
+  width: 50%;
+  float: right;
+}
+.floatL{
+  padding-top: 15px;
+  width: 50%;
+  float: left;
+
+  }.sobreImg{
+    height: 450px;
+    width: 300px;
+  }
+  .float2{
+    width: 50%;
+    float:  left;
+  }
