@@ -1,0 +1,385 @@
+nav {
+  background-color: seagreen;
+}
+.navbar-brand img {
+  max-height: 70px;
+}
+.navbar-brand {
+
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: yellow;
+  margin-top: 1px;
+  text-shadow: 3px 3px darkblue;
+
+}
+#loja{
+  background-image: url("midias/verde.jpg");
+}
+.guias{
+
+  color: yellow;
+  text-shadow: 
+  -1px -1px 0px #000, 
+  -1px 1px 0px #000,                    
+  1px -1px 0px #000,                  
+  1px 0px 0px #000;
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+
+}
+
+.guias:hover{
+  color: #f8e816 ;
+
+}
+
+.guiaLi{
+  margin-left: -40px;
+
+}
+
+
+
+nav ul li a {
+  color: #ffffff;
+  font-size: 22px;
+  margin: auto 75px;
+}
+nav ul li a:hover {
+  color: #ffffff;
+}
+form{
+  margin-top: 50px;
+  padding: 15px;
+  width: 70%
+  padding:25px;
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 15px;
+  align-items: center;
+  
+  background-color: rgba(25, 2, 47, 0.2);
+  backdrop-filter: blur( 20px);
+  -webkit-backdrop-filter:  blur(20px);
+  
+  border-radius: 20px;
+
+}
+.customButton:hover{
+  background-color: #4169E1;
+  width: 155px;
+}
+
+.customButton{
+  background-color: blue;
+  border-radius: 10px;
+  color: black;
+  width: 150px;
+  text-align: center;
+  border:3px solid black;
+
+  font-family: sans-serif;
+  font-weight: bold;
+
+  margin: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+.navbar-brand:hover{
+ text-shadow: 3px 3px black;
+ color: yellow;
+}
+
+.centro{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  height: 15%;
+}
+form input[type=text]{
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  border:3px solid black;
+  margin: 5px 0px;
+  height:40px;
+  border-radius: 25px;
+}
+form input[type=number]{
+  width:100%;
+  height:40px;
+  border:3px solid black;
+  padding-left:5px;
+  margin: 5px 0px;
+  text-align: center;
+  border-radius: 25px;
+}
+form input[type=button]:hover{
+
+  background: lightblue;
+
+}
+#resultado{
+  font-size: 30px;
+  font-weight: bold;
+  
+  
+
+}
+form input::placeholder{
+  color: darkgrey;
+  font-family: monospace;
+  font-size: 18px;
+}
+
+.divBotoes{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.botoes{
+  display: flex;
+  flex-wrap: wrap;
+}
+form input[type=button]{
+
+  height:40px;
+  cursor:pointer;
+  width: 200px;
+  margin: 5px;
+  border: 0;
+  border-radius: 25px;
+  display: none;
+}
+form h1{
+  text-align: center;
+  color: yellow;
+  font-family: sans-serif;
+  text-shadow: 
+  -1px -1px 0px #000, 
+  -1px 1px 0px #000,                    
+  1px -1px 0px #000,                  
+  1px 0px 0px #000;
+}
+p {
+  text-align: center;
+  color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+.tituloPagina{
+  font-size: 50px;
+  padding-left: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-family: 'Fredoka One', cursive;
+  text-shadow: 3px 3px darkblue;
+  color: yellow;
+}
+
+.brasoes{
+  display: flex;
+  align-items: center;
+  
+}
+
+.divInformacoes{
+
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.divInformacoes2{
+
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(25, 2, 47, 0.2);
+  backdrop-filter: blur( 20px);
+  -webkit-backdrop-filter:  blur(20px);
+  border-radius: 20px;
+}
+
+.fonteInformacao{
+  font-size: 19px;
+  color: white;
+  font-family: monospace;
+  font-family: 'Bakbak One', cursive;
+  text-shadow: 
+  -1px -1px 0px #000, 
+  -1px 1px 0px #000,                    
+  1px -1px 0px #000,                  
+  1px 0px 0px #000;
+  white-space: pre-wrap;
+}
+
+.fonteTituloInformacao{
+
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 
+  -2px -2px 1px #000, 
+  -2px 2px 1px #000,                    
+  2px -2px 1px #000,                  
+  2px 1px 1px #000;
+
+}
+
+.escudos:hover{
+
+  width: 100px;
+  height: 100px;
+  
+
+}
+
+.divCalcular{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ background-color: yellow;
+ margin-top: 100px;
+}
+
+.divHistorico{
+  margin-left: 1050px;
+  margin-top: 170px;
+  width: 250px;
+  height: 420px;
+  background-color: white;
+  border:3px solid black;
+  overflow: auto;
+  font-family: sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.teste{
+  align-items: center;
+}
+
+.nomeDoBrabo{
+
+  font-size: 20px;
+  color: yellow;
+  font-weight: bold;
+  font-family: monospace;
+  text-shadow: 
+  -1px -1px 0px #000, 
+  -1px 1px 0px #000,                    
+  1px -1px 0px #000,                  
+  1px 0px 0px #000;
+
+}
+
+.handleVisibilidade{
+  visibility: hidden;
+}
+
+nav{
+  background-image: linear-gradient(#008000, #0000ff, #ffff00);
+}
+
+body{
+  background-color: green;
+  background-image: url("midias/brasill.png");
+  
+}
+.float{
+  padding-top: 150px;
+  width: 33%;
+  float: left;
+}
+.floatR{
+  padding-top: 15px;
+  width: 50%;
+  height: 50%;
+  float: right;
+  background-color: rgba(25, 2, 47, 0.2);
+  backdrop-filter: blur( 20px);
+  -webkit-backdrop-filter:  blur(50px);
+}
+.floatL{
+  padding-top: 15px;
+  width: 50%;
+  height: 50%;
+  float: left;
+  background-color: rgba(25, 2, 47, 0.2);
+  backdrop-filter: blur( 20px);
+  -webkit-backdrop-filter:  blur(50px);
+
+
+  }.sobreImg{
+    height: 450px;
+    width: 350px;
+  }
+  .float2{
+    width: 50%;
+    float:  left;
+  }
+  #sobreFundo{
+    background-image: url("midias/galaxiaaa.jpg");
+  }
+  .tituloSobre{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-weight: bold;
+    color: white;
+    text-shadow: 
+    -1px -1px 0px #000, 
+    -1px 1px 0px #000,                    
+    1px -1px 0px #000,                  
+    1px 0px 0px #000;
+  }
+  .sobre{
+    font-size: 27px;
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-weight: bold;
+    color: white;
+    text-shadow: 
+    -1px -1px 0px #000, 
+    -1px 1px 0px #000,                    
+    1px -1px 0px #000,                  
+    1px 0px 0px #000;
+
+  }
+  #historico{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+  }
+  .jogadas{
+    padding-top: 40px;
+    font-size: 17px;
+    color: white;
+    font-family: monospace;
+    font-family: 'Inconsolata', monospace;
+    text-shadow: 
+    -1px -1px 0px #000, 
+    -1px 1px 0px #000,                    
+    1px -1px 0px #000,                  
+    1px 0px 0px #000;
+    white-space: pre-wrap;
+  }

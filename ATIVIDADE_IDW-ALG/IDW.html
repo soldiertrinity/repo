@@ -1,0 +1,73 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>Some seus pontos</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" type ="text/css" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+  
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top auto-hiding-navbar">
+    <div class="container" style="margin-left: -1px;">
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="br_logo.png" /> BRASILEIRÃO 2021
+      </a>
+      <button class="navbar-toggler" type="button" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item guiaLi" >
+            <a class="nav-link active guias" aria-current="page" href="telaPrincipal.html">Pagina Inicial</a>
+          </li>
+          <li class="nav-item guiaLi">
+            <a class="nav-link guias" href="IDW.html">Soma pontos</a>
+          </li>
+          <li class="nav-item guiaLi">
+            <a class="nav-link guias" href="jogadas.html">Jogadas</a>
+          </li>
+          <li class="nav-item guiaLi">
+            <a class="nav-link guias" href="sobre.html">Informações</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <form>
+    <h1> Calcula Pontos </h1>
+    <input type="text" name="time" placeholder="Nome do seu Time" id="time"/>
+    <input type="number" name="vitorias" placeholder="Vitorias" min="0" id="vitorias"/>
+    <input type="number" name="empates" placeholder="Empates" min="0" id="empates"/>
+    <input type="number" name="derrota" placeholder="Derrotas" min="0" id="derrota"/>
+    <div class="divBotoes">
+      <label class="customButton">
+        <input type="button" name="enviar" placeholder="Enviar" id="enviar" onclick="pontuar()" /> 
+        Pontuar
+      </label >
+      <label class="customButton">
+        <input type="button" name="enviar" placeholder="Enviar" id="enviar" onclick="limpar()" />
+        Limpar
+      </label >
+    </div>
+    <div style="border-radius: 20px; background-color: yellow;">
+    <p id="resultado">
+    </p>
+  </div>
+    <p>
+
+    </p>
+  </form>
+  <div class="divHistorico">
+    Histórico <br><br>
+    <p id="historico">
+    </p>
+  </div>
+  
+  <script type="text/javascript" src="main.js"> </script>
+</body>
+</html>
